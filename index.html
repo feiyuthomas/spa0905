@@ -60,18 +60,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    </nav> 
   </header> 
   <main> 
+    <style>
+  #visual {
+    position: relative;
+    text-align: center;
+  }
+  .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  .open {
+    margin-bottom: 10px;
+  }
+  .tel a {
+    text-decoration: none;
+  }
+  /* 响应式设计 */
+  @media (max-width: 600px) {
+    .data .open {
+      font-size: 60px;
+    }
+    .data .tel {
+      font-size: 16px;
+    }
+  }
+</style>
    <div id="visual"> 
     <!-- <img src="images/home1.png" alt="">  -->
     <img src="images/323.gif" alt=""> 
     <div class="data">
-      <p class="open" style="text-align: top; color: rgb(0, 0, 0); font-size: 130px; font-weight: bold">  
+      <p class="open" style="text-align: top; color: rgb(0, 0, 0); font-size: 90px; font-weight: bolder">  
         <span class="label">ランプ.</span>  
-    </p>
-      <p class="open" style="text-align: left; color: rgb(0, 0, 0);">
+        <!-- <strong>TEL. 070-8351-7765</strong> -->
+     </p>
+      <!-- <p class="open" style="text-align: left; color: rgb(0, 0, 0);">
           <span class="label">OPEN.</span>11:00〜24:00
-      </p>
-      <p class="tel" style="text-align: left; color: rgb(0, 0, 0);">
-          <span class="label">TEL.</span><a href="tel:070-8351-7765" style="color: rgb(0, 0, 0);">070-8351-7765</a>
+      </p> -->
+      <p class="tel" style="text-align: left; color: rgb(248, 3, 3);">
+        <!-- <strong>TEL. 070-8351-7765</strong> -->
+          <span class="label"></span><a href="tel:070-8351-7765" style="color: rgb(0, 0, 0); font-weight: bolder">TEL. 070-8351-7765</a>
       </p>
   </div>
    </div> 
@@ -79,9 +108,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <section id="event"> 
     <!-- <h2>店舗からのお知らせ</h2>  -->
     <div>
+      <br> OPEN. 11:00〜24:00
      <!-- ★お値段以上の施術内容★ -->
      <br> 
-
+     <!-- <strong>TEL. 070-8351-7765</strong> -->
      <!-- <strong>60分7,000円～</strong> -->
      <br>
      <strong> 新規お客様1000円OFF</strong>
@@ -190,10 +220,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <section id="service"> 
     <h2><span>Photo</span><span>店内・マッサージ写真</span></h2> 
     <ul id="photo-list"> 
-     <li><a href="https://shop2.es-johokan.com/shop/lamp-relaxation//photo/service01.jpg"><img src="images/service01.jpg" alt="受付"></a><span>受付</span></li> 
-     <li><a href="https://shop2.es-johokan.com/shop/lamp-relaxation//photo/service02.jpg"><img src="images/service02.jpg" alt="待合室"></a><span>待合室</span></li> 
-     <li><a href="https://shop2.es-johokan.com/shop/lamp-relaxation//photo/service03.jpg"><img src="images/service03.jpg" alt="店内"></a><span>店内</span></li> 
-     <li><a href="https://shop2.es-johokan.com/shop/lamp-relaxation//photo/service04.jpg"><img src="images/service04.jpg" alt="マッサージルーム"></a><span>マッサージルーム</span></li> 
+     <li><img src="images/service01.jpg" alt="受付"></a><span>受付</span></li> 
+     <li><img src="images/service02.jpg" alt="待合室"></a><span>待合室</span></li> 
+     <li><img src="images/service03.jpg" alt="店内"></a><span>店内</span></li> 
+     <li><img src="images/service04.jpg" alt="マッサージルーム"></a><span>マッサージルーム</span></li> 
     </ul> 
    </section> 
    <section id="access"> 
