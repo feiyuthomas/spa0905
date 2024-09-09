@@ -39,6 +39,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	#event {
 		background-image: url(images/44.png);
 	}
+  body { margin: 0; font-family: Arial, sans-serif; }
+  header { background-color: #f8f9fa; padding: 1rem; text-align: center; }
+  .data h1 span { color: #007bff; }
+  .data p { margin: 0; color: #6c757d; }
+  nav ul { list-style-type: none; padding: 0; }
+  nav ul li { display: inline-block; margin-right: 1rem; }
+  nav ul li a { color: #007bff; text-decoration: none; }
+
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    nav ul { text-align: left; }
+    nav ul li { display: block; }
+  }
+  
 </style> 
  </head> 
  <body data-template-type="" data-template-variation=""> 
@@ -66,6 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </ul> 
    </nav> 
   </header> 
+  
   <main> 
    <div id="visual"> 
     <!-- <img src="images/home1.png" alt="">  -->
@@ -208,7 +223,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    </section> 
    <section id="access"> 
     <h2><span>Access</span><span>アクセス</span></h2> 
-    <p>住所：広島市西区天満町4-29</p>
+    <h2 style="font-weight: bolder">住所：広島市西区天満町4-29</h2>
     <div id="map_canvas"> 
   <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3292.148825698395!2d132.43698807573136!3d34.39756297302886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDIzJzUxLjIiTiAxMzLCsDI2JzIyLjQiRQ!5e0!3m2!1sen!2skr!4v1725547505235!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div> 
@@ -217,9 +232,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <p class="comment"></p> 
    </section> 
    <section id="information"> 
-    <div class="qr_code"> 
-     <div src="/" alt="QRコード"> 
-    </div> 
     <table id="information-table"> 
      <tbody>
       <tr> 
